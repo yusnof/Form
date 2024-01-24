@@ -10,28 +10,33 @@
   <header>
     
   </header>
-    
+
   <h1 id="title">Survey Form</h1>
    <p id="description"> Welcome to you Survey</p>
-
    <form id="survey-form">
+    
+    <fieldset>
+     <label id="name-label" for="name">Name <input placeholder="Name" type="text" id="name" required/></label>
+     <label id="email-label" for="email">E-mail <input placeholder="E-mail" type="email" id="email" required/></label> 
+     <label id="number-label" for="number">Age <input type="number" id="number" min="13" max="100" placeholder="Age"/></label>
+    </fieldset>
 
-     <label id="name-label" for="name" >Name</label>
-      <input placeholder="Name" type="text" id="name" required/>
-      
-
-     <label id="email-label" for="email">E-mail<input placeholder="E-mail" type="email" id="email" required/></label> 
-
-     <label id="number-label" for="number">Age<input type="number" id="number" min="13" max="100" placeholder="Age"/></label>
-
+    <fieldset>
+      <label>What are you doing currenty? 
        <select id="dropdown">
-         <option></option>
-         <option></option>      
-       </select>    
+        <option>Non-student</option>
+         <option>Student</option>
+         <option>Other</option> 
+       </select>
+      </label>
+
+      </fieldset>
+      <fieldset>    
        <input type="radio" name="1" value="this" /> <input type="radio" name="1" value="that"/>
        <input type="checkbox" value="3" /><input type="checkbox" value="3" />
        <textarea cols="20"></textarea>
        <button id="submit"></button>
+      </fieldset>
    </form>  
 </body> 
 

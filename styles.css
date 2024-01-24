@@ -14,11 +14,13 @@ h1, p {
 }
 
 form {
-  background-color: #5ba778;
+  background-color: #534399;
   width: 60vw;
   max-width: 500px;
   min-width: 300px;
   margin: 0 auto;
+  border-radius: 20px;
+
 }
 
 fieldset {
